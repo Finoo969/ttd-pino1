@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Organisasi</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div id="loader">
+<div class="spinner"></div>
+</div>
+
+<div id="progressBar"></div>
+
+<nav id="navbar">
+<div class="logo">ORMAWA</div>
+
+<ul>
+<li><a href="#artikel">Artikel</a></li>
+<li><a href="#pengumuman">Pengumuman</a></li>
+<li><a href="#galeri">Galeri</a></li>
+<li><a href="#ekskul">Ekskul</a></li>
+<li><a href="#guru">Guru</a></li>
+<li><a href="#divisi">Divisi</a></li>
+</ul>
+
+<button id="themeBtn">
+<i class="fas fa-moon"></i>
+</button>
+</nav>
+
+<header class="hero">
+
+<div class="particles"></div>
+
+<div class="hero-content">
+
+<h1 id="typing"></h1>
+
+<p>
+Membangun generasi yang aktif,
+kreatif, inovatif dan berprestasi.
+</p>
+
+<a href="#artikel" class="btn">
+Mulai Jelajahi
+</a>
+
+</div>
+
+</header>
+
+<section id="pengumuman">
+
+<h2>Pengumuman</h2>
+
+<div class="announcement">
+📢 Pendaftaran anggota baru dibuka hingga 30 Juni 2026
+</div>
+
+</section>
+
+<section id="artikel">
+
+<h2>Artikel</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Kepemimpinan</h3>
+<p>Belajar menjadi pemimpin yang baik.</p>
+<button onclick="openModal('kepemimpinan')">
+Baca
+</button>
+</div>
+
+<div class="card">
+<h3>Kolaborasi</h3>
+<p>Membangun tim yang solid.</p>
+<button onclick="openModal('kolaborasi')">
+Baca
+</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="galeri">
+
+<h2>Galeri</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/400/300?1">
+<img src="https://picsum.photos/400/300?2">
+<img src="https://picsum.photos/400/300?3">
+<img src="https://picsum.photos/400/300?4">
+
+</div>
+
+</section>
+
+<section id="ekskul">
+
+<h2>Ekstrakurikuler</h2>
+
+<div class="cards">
+
+<div class="card">Pramuka</div>
+<div class="card">PMR</div>
+<div class="card">Paskibra</div>
+<div class="card">KIR</div>
+
+</div>
+
+</section>
+
+<section id="guru">
+
+<h2>Data Guru</h2>
+
+<input
+type="text"
+id="searchGuru"
+placeholder="Cari Guru..."
+>
+
+<div id="guruList">
+
+<div class="guru">Bapak Ahmad</div>
+<div class="guru">Ibu Siti</div>
+<div class="guru">Bapak Yusuf</div>
+
+</div>
+
+</section>
+
+<section id="divisi">
+
+<h2>Data Divisi</h2>
+
+<div class="division-buttons">
+
+<button onclick="showDivisi('psdm')">
+PSDM
+</button>
+
+<button onclick="showDivisi('humas')">
+HUMAS
+</button>
+
+<button onclick="showDivisi('kominfo')">
+KOMINFO
+</button>
+
+</div>
+
+<div id="divisionContent">
+
+Pilih divisi untuk melihat anggota.
+
+</div>
+
+</section>
+
+<section id="statistik">
+
+<h2>Statistik</h2>
+
+<div class="stats">
+
+<div>
+<h3 class="counter" data-target="150">0</h3>
+<p>Anggota</p>
+</div>
+
+<div>
+<h3 class="counter" data-target="40">0</h3>
+<p>Kegiatan</p>
+</div>
+
+<div>
+<h3 class="counter" data-target="25">0</h3>
+<p>Prestasi</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Kontak</h3>
+
+<p>📍 Jl. Pendidikan No.1</p>
+
+<p>📞 0812-3456-7890</p>
+
+<p>✉ organisasi@email.com</p>
+
+</footer>
+
+<button id="topBtn">
+↑
+</button>
+
+<div class="modal" id="modal">
+<div class="modal-content">
+<span onclick="closeModal()">&times;</span>
+<div id="modalBody"></div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
